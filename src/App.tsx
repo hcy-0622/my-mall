@@ -1,17 +1,15 @@
-import React, { useState } from 'react'
-import { Button } from 'antd-mobile'
+import React, { Suspense } from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import { renderRoutes } from 'react-router-config'
 
-import './App.styl'
+import routes from './router'
 
-const App = () => {
-  const [count, setCount] = useState(0)
-
+const App: React.FC = React.memo(() => {
   return (
-    <div className="App">
-      <div className="test"></div>
-      <Button type="primary">123456</Button>
-    </div>
+    <BrowserRouter>
+      <Suspense fallback={<div>Loading...</div>}>{renderRoutes(routes)}</Suspense>
+    </BrowserRouter>
   )
-}
+})
 
 export default App
