@@ -4,12 +4,12 @@ import { renderRoutes } from 'react-router-config'
 
 import routes from './router'
 
-const App: React.FC = React.memo(() => {
+const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Suspense fallback={<div>Loading...</div>}>{renderRoutes(routes)}</Suspense>
     </BrowserRouter>
   )
-})
+}
 
-export default App
+export default React.memo(App)
