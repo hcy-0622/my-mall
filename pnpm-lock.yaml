@@ -17,7 +17,7 @@ specifiers:
   eslint-plugin-react: ^7.24.0
   eslint-plugin-react-hooks: ^4.2.0
   hox: ^1.1.4
-  husky: ^7.0.1
+  husky: ^7.0.0
   normalize.css: ^8.0.1
   postcss-flexbugs-fixes: ^5.0.2
   postcss-px-to-viewport: ^1.1.1

@@ -7,6 +7,7 @@ const Category = React.lazy(() => import('../views/category'))
 const Cart = React.lazy(() => import('../views/cart'))
 const Me = React.lazy(() => import('../views/me'))
 
+const HomeRedirect = () => <Redirect to="/home" />
 const routes: RouteConfig[] = [
   {
     path: '/home',
@@ -27,7 +28,7 @@ const routes: RouteConfig[] = [
   {
     path: '/',
     exact: true,
-    render: () => <Redirect to="/home" />,
+    render: HomeRedirect,
   },
 ]
 

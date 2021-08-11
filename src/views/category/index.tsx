@@ -3,7 +3,7 @@ import { Button } from 'antd-mobile'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const Category: React.FC = React.memo(() => {
+const Category: React.FC = () => {
   const counter = useCounter()
 
   return (
@@ -18,6 +18,6 @@ const Category: React.FC = React.memo(() => {
       <NavLink to="/home">跳转</NavLink>
     </div>
   )
-})
+}
 
-export default Category
+export default React.memo(Category)

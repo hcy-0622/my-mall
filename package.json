@@ -6,8 +6,8 @@
     "build": "tsc && vite build",
     "serve": "vite preview",
     "preinstall": "npx only-allow pnpm",
-    "prepare": "husky install",
-    "lint": "npx eslint ./src"
+    "lint": "npx eslint ./src",
+    "prepare": "husky install"
   },
   "dependencies": {
     "antd-mobile": "^2.3.4",
@@ -33,7 +33,6 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^7.0.1",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-px-to-viewport": "^1.1.1",
     "postcss-write-svg": "^3.0.1",
@@ -42,6 +41,7 @@
     "stylus-loader": "^6.1.0",
     "typescript": "^4.3.2",
     "vite": "^2.4.4",
-    "vite-plugin-babel-import": "^2.0.5"
+    "vite-plugin-babel-import": "^2.0.5",
+    "husky": "^7.0.0"
   }
 }
