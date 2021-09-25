@@ -8,12 +8,10 @@ const Home: React.FC = () => {
   return (
     <div>
       <p>{counter.count}</p>
-      <Button type="primary" onClick={counter.increment}>
+      <Button color="primary" onClick={counter.increment}>
         增加
       </Button>
-      <Button type="warning" onClick={counter.decrement}>
-        减少
-      </Button>
+      <Button onClick={counter.decrement}>减少</Button>
       <NavLink to="/category">跳转</NavLink>
     </div>
   )

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const devBaseURL = 'http://127.0.0.1:3002'
+const devBaseURL = 'http://127.0.0.1:7788'
 const prodBaseURL = 'http://127.0.0.1:3003'
 
 const http = axios.create({

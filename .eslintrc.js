@@ -28,6 +28,7 @@ module.exports = {
   // plugins: [],
   rules: {
     '@typescript-eslint/explicit-module-boundary-types': 'off', // 自动推断返回值类型
+    '@typescript-eslint/no-var-requires': 'off', // 允许require
     //   'prettier/prettier': ['error', {}, { usePrettierrc: true }],
     //   'react/react-in-jsx-scope': 'off',
     //   'jsx-a11y/accessible-emoji': 'off',

@@ -7,13 +7,17 @@
     "serve": "vite preview",
     "preinstall": "npx only-allow pnpm",
     "lint": "npx eslint ./src",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "mock": "mocker ./mocks"
+  },
+  "mocker": {
+    "port": 7788
   },
   "dependencies": {
-    "antd-mobile": "^2.3.4",
+    "antd-mobile": "^5.0.0-beta.11",
+    "antd-mobile-icons": "^0.2.2",
     "axios": "^0.21.1",
     "hox": "^1.1.4",
-    "normalize.css": "^8.0.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-router-config": "^5.1.1",
@@ -33,15 +37,16 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.0",
+    "mocker-api": "^2.9.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-px-to-viewport": "^1.1.1",
     "postcss-write-svg": "^3.0.1",
     "prettier": "^2.3.2",
-    "stylus": "^0.54.8",
-    "stylus-loader": "^6.1.0",
     "typescript": "^4.3.2",
     "vite": "^2.4.4",
     "vite-plugin-babel-import": "^2.0.5",
-    "husky": "^7.0.0"
+    "vite-plugin-windicss": "^1.4.5",
+    "windicss": "^3.1.7"
   }
 }

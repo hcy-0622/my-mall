@@ -1,15 +1,14 @@
 import React, { Suspense } from 'react'
-import { BrowserRouter } from 'react-router-dom'
 import { renderRoutes } from 'react-router-config'
 
 import routes from './router'
+import Footer from './components/footer'
 
-const App: React.FC = () => {
+export default React.memo(function App() {
   return (
-    <BrowserRouter>
+    <div className="pb-[100px] box-border">
       <Suspense fallback={<div>Loading...</div>}>{renderRoutes(routes)}</Suspense>
-    </BrowserRouter>
+      <Footer />
+    </div>
   )
-}
-
-export default React.memo(App)
+})

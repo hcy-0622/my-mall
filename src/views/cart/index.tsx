@@ -1,7 +1,19 @@
 import React from 'react'
+import { Button } from 'antd-mobile'
+import { getUser } from '@/api'
 
-const Cart: React.FC = () => {
-  return <div>购物车</div>
-}
+const Cart: React.FC = React.memo(function Cart() {
+  const click = () => {
+    getUser().then((result) => {
+      console.log(result.data)
+    })
+  }
 
-export default React.memo(Cart)
+  return (
+    <div>
+      <Button onClick={click}>123</Button>
+    </div>
+  )
+})
+
+export default Cart
