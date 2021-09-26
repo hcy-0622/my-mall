@@ -21,7 +21,7 @@ export default React.memo(function App() {
   }, [location.pathname, setActiveKey, setHidden])
 
   return (
-    <div className="pb-[100px] box-border">
+    <div className="pb-100px box-border">
       <Suspense fallback={<div>Loading...</div>}>{renderRoutes(routes)}</Suspense>
       <Footer />
     </div>

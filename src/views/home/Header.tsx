@@ -11,6 +11,7 @@ export default React.memo(function Header() {
       back={null}
       left={
         <UnorderedListOutline
+          className="text-32px"
           onClick={() => {
             history.push('/category')
           }}
@@ -18,7 +19,7 @@ export default React.memo(function Header() {
       }
       right={
         <span
-          className="text-[16px]"
+          className="text-16px"
           onClick={() => {
             history.push('/login')
           }}>
