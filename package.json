@@ -17,6 +17,8 @@
     "antd-mobile": "^5.0.0-beta.11",
     "antd-mobile-icons": "^0.2.2",
     "axios": "^0.21.1",
+    "classnames": "^2.3.1",
+    "fastclick": "^1.0.6",
     "hox": "^1.1.4",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
@@ -24,6 +26,7 @@
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
+    "@types/fastclick": "^1.0.30",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-config": "^5.0.3",

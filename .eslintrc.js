@@ -29,20 +29,8 @@ module.exports = {
   rules: {
     '@typescript-eslint/explicit-module-boundary-types': 'off', // 自动推断返回值类型
     '@typescript-eslint/no-var-requires': 'off', // 允许require
-    //   'prettier/prettier': ['error', {}, { usePrettierrc: true }],
-    //   'react/react-in-jsx-scope': 'off',
-    //   'jsx-a11y/accessible-emoji': 'off',
-    //   'react/prop-types': 'off',
-    //   '@typescript-eslint/explicit-function-return-type': 'off',
-    //   'simple-import-sort/imports': 'error',
-    //   'simple-import-sort/exports': 'error',
-    //   'jsx-a11y/anchor-is-valid': [
-    //     'error',
-    //     {
-    //       components: ['Link'],
-    //       specialLink: ['hrefLeft', 'hrefRight'],
-    //       aspects: ['invalidHref', 'preferButton'],
-    //     },
-    //   ],
+
+    'jsx-a11y/no-static-element-interactions': 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
   },
 }

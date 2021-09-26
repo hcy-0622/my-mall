@@ -6,6 +6,8 @@ const Home = React.lazy(() => import('../views/home'))
 const Category = React.lazy(() => import('../views/category'))
 const Cart = React.lazy(() => import('../views/cart'))
 const Me = React.lazy(() => import('../views/me'))
+const Search = React.lazy(() => import('../views/search'))
+const Login = React.lazy(() => import('../views/login'))
 
 const HomeRedirect = () => <Redirect to="/home" />
 const routes: RouteConfig[] = [
@@ -24,6 +26,14 @@ const routes: RouteConfig[] = [
   {
     path: '/me',
     component: Me,
+  },
+  {
+    path: '/search',
+    component: Search,
+  },
+  {
+    path: '/login',
+    component: Login,
   },
   {
     path: '/',

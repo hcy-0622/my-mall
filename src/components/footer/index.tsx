@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { TabBar } from 'antd-mobile'
-
 import { AppOutline, AppstoreOutline, StarOutline, UserOutline } from 'antd-mobile-icons'
+import classNames from 'classnames'
+import useTabbar from '@/store/tabbar'
 
 const tabs = [
   {
@@ -29,29 +30,22 @@ const tabs = [
     icon: <UserOutline />,
   },
 ]
-const Footer: React.FC = () => {
+export default React.memo(function Footer() {
   const history = useHistory()
-  const [activeKey, setActiveKey] = useState('home')
-
-  const tabBarChange = (key: string) => {
-    setActiveKey(key)
-    history.push(key)
-  }
-
-  useEffect(() => {
-    setActiveKey(history.location.pathname.substr(1))
-    // history.listen((location) => {
-    //   setActiveKey(location.pathname.substr(1))
-    // })
-  }, [history])
+  const { activeKey, hidden } = useTabbar()
 
   return (
-    <TabBar className="w-full fixed bottom-0 bg-white" activeKey={activeKey} onChange={tabBarChange}>
+    <TabBar
+      className={classNames('w-full fixed bottom-0 bg-white', {
+        hidden: hidden,
+      })}
+      activeKey={activeKey}
+      onChange={(key) => {
+        history.push(key)
+      }}>
       {tabs.map((item) => (
         <TabBar.Item key={item.key} icon={item.icon} title={item.title} />
       ))}
     </TabBar>
   )
-}
-
-export default Footer
+})

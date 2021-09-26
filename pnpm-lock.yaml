@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@types/fastclick': ^1.0.30
   '@types/react': ^17.0.0
   '@types/react-dom': ^17.0.0
   '@types/react-router-config': ^5.0.3
@@ -11,12 +12,14 @@ specifiers:
   antd-mobile: ^5.0.0-beta.11
   antd-mobile-icons: ^0.2.2
   axios: ^0.21.1
+  classnames: ^2.3.1
   eslint: ^7.32.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-jsx-a11y: ^6.4.1
   eslint-plugin-prettier: ^3.4.0
   eslint-plugin-react: ^7.24.0
   eslint-plugin-react-hooks: ^4.2.0
+  fastclick: ^1.0.6
   hox: ^1.1.4
   husky: ^7.0.0
   mocker-api: ^2.9.0
@@ -38,6 +41,8 @@ dependencies:
   antd-mobile: registry.npmmirror.com/antd-mobile/5.0.0-beta.11_react-dom@17.0.2+react@17.0.2
   antd-mobile-icons: registry.npmmirror.com/antd-mobile-icons/0.2.2
   axios: 0.21.1
+  classnames: registry.nlark.com/classnames/2.3.1
+  fastclick: registry.npmmirror.com/fastclick/1.0.6
   hox: registry.nlark.com/hox/1.1.4_react@17.0.2
   react: registry.nlark.com/react/17.0.2
   react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
@@ -45,6 +50,7 @@ dependencies:
   react-router-dom: registry.nlark.com/react-router-dom/5.2.0_react@17.0.2
 
 devDependencies:
+  '@types/fastclick': registry.npmmirror.com/@types/fastclick/1.0.30
   '@types/react': registry.nlark.com/@types/react/17.0.17
   '@types/react-dom': registry.nlark.com/@types/react-dom/17.0.9
   '@types/react-router-config': registry.nlark.com/@types/react-router-config/5.0.3
@@ -4030,6 +4036,12 @@ packages:
       react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
     dev: false
 
+  registry.npmmirror.com/@types/fastclick/1.0.30:
+    resolution: {integrity: sha1-F96sa1/7CzcJ9QSfryTJ3Jt14Io=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/fastclick/download/@types/fastclick-1.0.30.tgz}
+    name: '@types/fastclick'
+    version: 1.0.30
+    dev: true
+
   registry.npmmirror.com/@windicss/config/1.4.5_typescript@4.3.5:
     resolution: {integrity: sha1-M/8tThkXqVbGplH+TPPpXE85F/s=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@windicss/config/download/@windicss/config-1.4.5.tgz}
     id: registry.npmmirror.com/@windicss/config/1.4.5
@@ -4133,6 +4145,12 @@ packages:
     hasBin: true
     requiresBuild: true
     dev: true
+
+  registry.npmmirror.com/fastclick/1.0.6:
+    resolution: {integrity: sha1-FhYlsnsaWAZAWTa9qaLBkm0Gvmo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/fastclick/download/fastclick-1.0.6.tgz}
+    name: fastclick
+    version: 1.0.6
+    dev: false
 
   registry.npmmirror.com/globby/11.0.4:
     resolution: {integrity: sha1-LLr/d8Lypi5x6bKBOme5ejowAaU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/globby/download/globby-11.0.4.tgz}
