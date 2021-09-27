@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 import { NavBar, Search } from 'antd-mobile'
 import { UnorderedListOutline } from 'antd-mobile-icons'
 
-export default React.memo(function Header() {
+export default React.memo(function HomeHeader() {
   const history = useHistory()
 
   return (

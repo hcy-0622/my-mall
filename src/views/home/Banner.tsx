@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Swiper } from 'antd-mobile'
 import { Banner, getBanners } from '@/api'
 
-export default React.memo(function Banner() {
+export default React.memo(function HomeBanner() {
   const [banners, setBanners] = useState<Banner[]>([])
 
   useEffect(() => {

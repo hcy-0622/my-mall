@@ -3,7 +3,7 @@ import { Swiper } from 'antd-mobile'
 import { MessageFill } from 'antd-mobile-icons'
 import { getNotices, Notice } from '@/api'
 
-export default React.memo(function Notice() {
+export default React.memo(function HomeNotice() {
   const [notices, setNotices] = useState<Notice[]>([])
 
   useEffect(() => {

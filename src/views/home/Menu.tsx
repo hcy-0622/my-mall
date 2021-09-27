@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 import { Grid } from 'antd-mobile'
 import { getMenus, Menu } from '@/api'
 
-export default React.memo(function Menu() {
+export default React.memo(function HomeMenu() {
   const [menus, setMenus] = useState<Menu[]>([])
   const history = useHistory()
 

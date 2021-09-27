@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 import { getProducts, Product } from '@/api'
 import style from './Products.module.css'
 
-export default React.memo(function Products() {
+export default React.memo(function HomeProducts() {
   const [products, setProducts] = useState<Product[]>([])
   const history = useHistory()
 

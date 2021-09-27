@@ -1,19 +1,19 @@
 import React from 'react'
 
-import Header from './Header'
-import Banner from './Banner'
-import Notice from './Notice'
-import Menu from './Menu'
-import Products from './Products'
+import HomeHeader from './Header'
+import HomeBanner from './Banner'
+import HomeNotice from './Notice'
+import HomeMenu from './Menu'
+import HomeProducts from './Products'
 
 export default React.memo(function Home() {
   return (
     <div className="pt-90px">
-      <Header />
-      <Banner />
-      <Notice />
-      <Menu />
-      <Products />
+      <HomeHeader />
+      <HomeBanner />
+      <HomeNotice />
+      <HomeMenu />
+      <HomeProducts />
     </div>
   )
 })
