@@ -3,6 +3,7 @@ import React from 'react'
 import Header from './Header'
 import Banner from './Banner'
 import Notice from './Notice'
+import Menu from './Menu'
 
 export default React.memo(function Home() {
   return (
@@ -10,6 +11,7 @@ export default React.memo(function Home() {
       <Header />
       <Banner />
       <Notice />
+      <Menu />
     </div>
   )
 })

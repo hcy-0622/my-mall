@@ -13,15 +13,17 @@ export default React.memo(function Notice() {
   }, [])
 
   return (
-    <div className="flex justify-between items-center px-20px py-10px">
+    <div className="flex items-center px-20px py-10px overflow-hidden">
       <MessageFill className="flex-shrink-0 mr-20px text-28px relative -top-2px" />
-      <Swiper autoplay indicator={() => null}>
-        {notices.map((n) => (
-          <Swiper.Item key={n.id}>
-            <p className="whitespace-nowrap overflow-ellipsis overflow-hidden text-[#666]">{n.title}</p>
-          </Swiper.Item>
-        ))}
-      </Swiper>
+      {notices.length !== 0 && (
+        <Swiper className="flex-auto" autoplay indicator={() => null}>
+          {notices.map((n) => (
+            <Swiper.Item key={n.id}>
+              <p className="whitespace-nowrap overflow-ellipsis overflow-hidden text-[#666] pr-40px">{n.title}</p>
+            </Swiper.Item>
+          ))}
+        </Swiper>
+      )}
     </div>
   )
 })

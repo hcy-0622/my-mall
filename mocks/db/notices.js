@@ -13,7 +13,7 @@ module.exports = (req, res) => {
   return res.json([
     {
       id: 1,
-      title: '全栈电商项目上线',
+      title: 'Apple iPhone 12 (A2404) 128GB 白色 支持移动联通电信5G 双卡双待手机',
       note: '通知备注',
       url: 'http://www.jd.com',
       type: 1,
@@ -22,7 +22,7 @@ module.exports = (req, res) => {
     },
     {
       id: 2,
-      title: '小程序云开发项目上线-带你从零玩转小程序开发精髓',
+      title: '摩托罗拉 edge s pro 旗舰骁龙870 1亿像素 50X潜望式变焦 10亿色144Hz臻彩屏 轻薄5G手机 8GB+128GB 静夜思',
       note: '通知备注',
       url: 'http://www.baidu.com',
       type: 1,
@@ -31,9 +31,9 @@ module.exports = (req, res) => {
     },
     {
       id: 3,
-      title: 'UniApp全栈项目上线-带你从零玩转UniApp开发精髓',
+      title: '索尼（SONY）Xperia 1 III 智能5G手机 21:9 4K HDR OLED屏 120Hz 骁龙888 微单技术 12GB+256GB夜烟黑',
       note: '通知备注',
-      url: 'http://www.baidu.com',
+      url: 'http://www.taobao.com',
       type: 1,
       status: 1,
       sort: 3,

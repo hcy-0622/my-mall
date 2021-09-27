@@ -1,5 +1,5 @@
-import { StatusType } from '@/types'
 import http from './http'
+import { StatusType } from '@/types'
 
 export interface Banner {
   id: number //'主键',
@@ -23,3 +23,15 @@ export interface Notice {
   sort: number //'排序',
 }
 export const getNotices = () => http.get<Notice[]>('/api/v1/notices')
+
+export interface Menu {
+  id: number //'主键',
+  title: string //'标题',
+  note: string //'备注',
+  pic: string //'图片地址',
+  url: string //'链接地址',
+  type: StatusType //'轮播类型：0->PC；1->mobile',
+  status: StatusType //'上下线状态：0->下线；1->上线',
+  sort: number //'排序',
+}
+export const getMenus = () => http.get<Menu[]>('/api/v1/menus')
