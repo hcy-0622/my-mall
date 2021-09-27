@@ -19,7 +19,7 @@ export default React.memo(function Notice() {
         <Swiper className="flex-auto" autoplay indicator={() => null}>
           {notices.map((n) => (
             <Swiper.Item key={n.id}>
-              <p className="whitespace-nowrap overflow-ellipsis overflow-hidden text-[#666] pr-40px">{n.title}</p>
+              <p className="whitespace-nowrap overflow-ellipsis overflow-hidden text-gray-500 pr-40px">{n.title}</p>
             </Swiper.Item>
           ))}
         </Swiper>

@@ -8,6 +8,7 @@ export default React.memo(function Header() {
 
   return (
     <NavBar
+      className="fixed top-0 left-0 z-10 bg-red-500 w-full text-white"
       back={null}
       left={
         <UnorderedListOutline

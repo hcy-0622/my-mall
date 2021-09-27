@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import { Redirect } from 'react-router-dom'
 import { RouteConfig } from 'react-router-config'
 
-const Home = React.lazy(() => import('../views/home'))
-const Category = React.lazy(() => import('../views/category'))
-const Cart = React.lazy(() => import('../views/cart'))
-const Me = React.lazy(() => import('../views/me'))
-const Search = React.lazy(() => import('../views/search'))
-const Login = React.lazy(() => import('../views/login'))
+const Home = lazy(() => import('../views/home'))
+const Category = lazy(() => import('../views/category'))
+const Cart = lazy(() => import('../views/cart'))
+const Me = lazy(() => import('../views/me'))
+const Product = lazy(() => import('../views/product'))
+const Search = lazy(() => import('../views/search'))
+const Login = lazy(() => import('../views/login'))
 
 const HomeRedirect = () => <Redirect to="/home" />
 const routes: RouteConfig[] = [
@@ -26,6 +27,10 @@ const routes: RouteConfig[] = [
   {
     path: '/me',
     component: Me,
+  },
+  {
+    path: '/product/:id',
+    component: Product,
   },
   {
     path: '/search',

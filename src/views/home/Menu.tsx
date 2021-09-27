@@ -23,7 +23,7 @@ export default React.memo(function Menu() {
               history.push(m.url)
             }}>
             <img className="w-66px h-66px" src={m.pic} alt={m.title} />
-            <span className="text-12px text-[#666] mt-8px">{m.title}</span>
+            <span className="text-12px text-gray-500 mt-8px">{m.title}</span>
           </div>
         </Grid.Item>
       ))}

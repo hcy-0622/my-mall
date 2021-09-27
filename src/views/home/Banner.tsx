@@ -4,6 +4,7 @@ import { Banner, getBanners } from '@/api'
 
 export default React.memo(function Banner() {
   const [banners, setBanners] = useState<Banner[]>([])
+
   useEffect(() => {
     getBanners().then((res) => {
       setBanners(res.data)
