@@ -51,3 +51,16 @@ export interface Product {
   verify_status: StatusType //'审核状态：0->未审核；1->审核通过',
 }
 export const getProducts = () => http.get<Product[]>('/api/v1/products')
+
+export interface Category {
+  id: number //'主键',
+  parent_id: number //'上级分类的编号：0表示一级分类',
+  name: string //'名称',
+  icon: string //'图标',
+  description: string //'描述',
+  level: StatusType //'分类级别：0->1级；1->2级',
+  show_status: StatusType //'显示状态：0->不显示；1->显示',
+  sort: number //'排序'
+  children: Category[] // '子分类'
+}
+export const getCategories = () => http.get<Category[]>('/api/v1/categories')

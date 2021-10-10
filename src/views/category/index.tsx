@@ -1,7 +1,12 @@
 import React from 'react'
+import CategoryHeader from './Header'
+import CategoryContent from './Content'
 
-const Category: React.FC = () => {
-  return <div>Category</div>
-}
-
-export default React.memo(Category)
+export default React.memo(function Category() {
+  return (
+    <div className="pt-90px">
+      <CategoryHeader />
+      <CategoryContent />
+    </div>
+  )
+})

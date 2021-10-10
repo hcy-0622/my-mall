@@ -1,0 +1,10 @@
+.tabs {
+  display: flex;
+}
+
+.tabs :global(.adm-tabs-tab-list) {
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: calc(100vh - 100px);
+}
