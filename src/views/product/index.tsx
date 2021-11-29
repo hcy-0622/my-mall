@@ -1,6 +1,8 @@
-import React from 'react'
-import { RouteConfigComponentProps } from 'react-router-config'
+import { memo } from 'react'
+import { useParams } from 'react-router-dom'
 
-export default React.memo(function Product({ match }: RouteConfigComponentProps<{ id: string }>) {
-  return <div>{match.params.id}</div>
+export default memo(function Product() {
+  const params = useParams<'id'>()
+
+  return <div>{params.id}</div>
 })

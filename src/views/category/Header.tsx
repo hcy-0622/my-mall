@@ -1,10 +1,10 @@
-import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { memo } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { NavBar, Search } from 'antd-mobile'
 import { LeftOutline } from 'antd-mobile-icons'
 
-export default React.memo(function CategoryHeader() {
-  const history = useHistory()
+export default memo(function CategoryHeader() {
+  const navigate = useNavigate()
 
   return (
     <NavBar
@@ -14,14 +14,14 @@ export default React.memo(function CategoryHeader() {
         <LeftOutline
           className="text-32px"
           onClick={() => {
-            history.goBack()
+            navigate(-1)
           }}
         />
       }>
       <Search
         placeholder="寻找宝贝..."
         onFocus={() => {
-          history.push('/search')
+          navigate('/search')
         }}
       />
     </NavBar>

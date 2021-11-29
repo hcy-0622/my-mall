@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import { memo, useEffect, useState } from 'react'
 import { Swiper } from 'antd-mobile'
 import { MessageFill } from 'antd-mobile-icons'
 import { getNotices, Notice } from '@/api'
 
-export default React.memo(function HomeNotice() {
+export default memo(function HomeNotice() {
   const [notices, setNotices] = useState<Notice[]>([])
 
   useEffect(() => {

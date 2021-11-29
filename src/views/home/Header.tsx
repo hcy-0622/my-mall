@@ -1,10 +1,10 @@
-import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { memo } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { NavBar, Search } from 'antd-mobile'
 import { UnorderedListOutline } from 'antd-mobile-icons'
 
-export default React.memo(function HomeHeader() {
-  const history = useHistory()
+export default memo(function HomeHeader() {
+  const navigate = useNavigate()
 
   return (
     <NavBar
@@ -14,7 +14,7 @@ export default React.memo(function HomeHeader() {
         <UnorderedListOutline
           className="text-32px"
           onClick={() => {
-            history.push('/category')
+            navigate('/category')
           }}
         />
       }
@@ -22,7 +22,7 @@ export default React.memo(function HomeHeader() {
         <span
           className="text-16px"
           onClick={() => {
-            history.push('/login')
+            navigate('/login')
           }}>
           登录
         </span>
@@ -30,7 +30,7 @@ export default React.memo(function HomeHeader() {
       <Search
         placeholder="寻找宝贝..."
         onFocus={() => {
-          history.push('/search')
+          navigate('/search')
         }}
       />
     </NavBar>

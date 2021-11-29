@@ -1,6 +1,6 @@
-import React from 'react'
+import { memo } from 'react'
 
-const Me: React.FC = () => {
+export default memo(function Me() {
   return (
     <div>
       <p>个人中心</p>
@@ -49,6 +49,4 @@ const Me: React.FC = () => {
       <p>个人中心666</p>
     </div>
   )
-}
-
-export default React.memo(Me)
+})

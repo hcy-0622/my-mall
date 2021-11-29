@@ -27,10 +27,9 @@ module.exports = {
   ],
   // plugins: [],
   rules: {
-    '@typescript-eslint/explicit-module-boundary-types': 'off', // 自动推断返回值类型
-    '@typescript-eslint/no-var-requires': 'off', // 允许require
+    'react/react-in-jsx-scope': 'off', // React 17 不必显式导入
 
-    'jsx-a11y/no-static-element-interactions': 'off',
-    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-static-element-interactions': 'off', // 忽略静态元素处理事件
+    'jsx-a11y/click-events-have-key-events': 'off', // 忽略监听事件需要绑定 key 值
   },
 }

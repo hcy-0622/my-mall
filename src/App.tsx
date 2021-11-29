@@ -1,12 +1,12 @@
-import React, { Suspense, useEffect } from 'react'
+import { memo, Suspense, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
-import { renderRoutes } from 'react-router-config'
 
-import routes from './router'
+import { useRouter } from './router'
 import Footer from './components/footer'
 import useTabbar from './store/tabbar'
 
-export default React.memo(function App() {
+export default memo(function App() {
+  const element = useRouter()
   const location = useLocation()
   const { setActiveKey, setHidden } = useTabbar()
 
@@ -22,7 +22,7 @@ export default React.memo(function App() {
 
   return (
     <div className="pb-100px box-border">
-      <Suspense fallback={<div>Loading...</div>}>{renderRoutes(routes)}</Suspense>
+      <Suspense fallback={<div>Loading...</div>}>{element}</Suspense>
       <Footer />
     </div>
   )

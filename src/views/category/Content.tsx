@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import { memo, useEffect, useState } from 'react'
 import { Tabs, Grid } from 'antd-mobile'
 import { Category, getCategories } from '@/api'
 import style from './Content.module.css'
 
-export default React.memo(function CategoryContent() {
+export default memo(function CategoryContent() {
   const [categories, setCategories] = useState<Category[]>([])
 
   useEffect(() => {
